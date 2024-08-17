@@ -19,6 +19,7 @@ import dashboard from '../assets/dashboard.svg'
 import copilot from '../assets/copilot.svg'
 import swap from '../assets/swap.svg'
 import account from '../assets/account.svg'
+import notification from '../assets/notification.svg'
 import './style.css';
 
 const drawerWidth = 240;
@@ -93,7 +94,7 @@ const Sidebar = () => {
 
         <List sx={{ fontSize: "14px", whiteSpace: "2px" }}>
           <ul style={{ marginLeft: "2px", color: "white", listStyleType: "none" }}>
-            <li style={{ marginBottom: "10px" }}><LiaBellSolid style={{ marginRight: "10px" }} />Notifications</li>
+            <li style={{ marginBottom: "10px" }}><img src={notification} alt='' style={{ marginRight: "10px", marginTop:"10px" }} />Notifications</li>
             <li style={{ marginBottom: "10px" }}><RiSettings4Line style={{ marginRight: "10px" }} />Settings</li>
             <li style={{ marginBottom: "10px" }}><PiHeadphones style={{ marginRight: "10px" }} />Help & Support</li>
             <li style={{ marginBottom: "10px" }}><RiLogoutBoxLine style={{ marginRight: "10px" }} />Log Out</li>
