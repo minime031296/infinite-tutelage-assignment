@@ -21,6 +21,7 @@ import swap from '../assets/swap.svg'
 import account from '../assets/account.svg'
 import notification from '../assets/notification.svg'
 import './style.css';
+import User from './User';
 
 const drawerWidth = 240;
 
@@ -33,7 +34,9 @@ const Sidebar = () => {
         sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px`, bgcolor: "white" }}
       >
         <Toolbar>
-          <Typography sx={{ color: "black" }}>
+          <Typography sx={{ color: "black",
+            
+           }}>
             Dashboard
           </Typography>
 
@@ -76,7 +79,14 @@ const Sidebar = () => {
         <br /> <br /> 
        <List sx={{ fontSize: "14px", whiteSpace: "2px", top: "2px" }}>
           <ul style={{ marginLeft: "10px", color: "white", listStyleType: "none" }}>
-            <li style={{ marginBottom: "10px",color:"#BEFB7A" }}> <img src={dashboard} alt="" style={{ marginRight: "10px" }}/> Dashboard</li>
+            <li style={{ marginBottom: "10px",color:"#BEFB7A",display: 'flex',
+        alignItems: 'center',
+        WebkitBoxShadow: 'linear-gradient(90deg, #e0ff00, #a0ff00)',
+        
+        borderRadius: '8px',
+        border: '',
+     
+        maxWidth: '300px', }}> <img src={dashboard} alt="" style={{ marginRight: "10px" }}/> Dashboard</li>
             <li style={{ marginBottom: "10px" }}> <img src={copilot} alt="" style={{ marginRight: "10px" }}/> CRM</li>
             <li style={{ marginBottom: "10px" }}><FiBox style={{ marginRight: "10px" }} />MAM</li>
             <li style={{ marginBottom: "10px" }}><FiPieChart style={{ marginRight: "10px" }} />PAMM</li>
@@ -90,9 +100,9 @@ const Sidebar = () => {
           </ul>
         </List>
         <br /> <br /> <br />
-        <Divider />
+        
 
-        <List sx={{ fontSize: "14px", whiteSpace: "2px" }}>
+        <List sx={{ fontSize: "14px", whiteSpace: "1px" }}>
           <ul style={{ marginLeft: "2px", color: "white", listStyleType: "none" }}>
             <li style={{ marginBottom: "10px" }}><img src={notification} alt='' style={{ marginRight: "10px", marginTop:"10px" }} />Notifications</li>
             <li style={{ marginBottom: "10px" }}><RiSettings4Line style={{ marginRight: "10px" }} />Settings</li>
@@ -102,6 +112,7 @@ const Sidebar = () => {
         </List>
 
         <Divider />
+        <User/>
       </Drawer>
     </Box>
   );
