@@ -56,8 +56,8 @@ const Graph = () => {
         Download Report</a>
       </div>
       <div style={{ display: 'flex', gap: '10px', marginBottom: '10px', marginTop: '10px' }}>
-        <button style={{ backgroundColor: 'transparent', border: 'none', fontSize: '12px', fontWeight: 'bold', color: '#A586DC' }}>Monthly</button>
-        <button style={{ backgroundColor: 'transparent', border: 'none', fontSize: '12px', fontWeight: 'bold', color: '#000' }}>Yearly</button>
+        <button style={{ backgroundColor: 'transparent', border: 'none', fontSize: '12px', color: '#bab8c3', letterSpacing:"1px" }}>Monthly</button>
+        <button style={{ backgroundColor: '#f0ebf9', height:"25px", borderRadius:"10px", border: 'none', fontSize: '12px', fontWeight: 'bold', color: '#000' }}>Yearly</button>
       </div>
       <div style={{ height: 'calc(100% - 60px)' }}>
         <Bar data={data} options={options} />

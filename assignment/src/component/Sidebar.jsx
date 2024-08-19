@@ -81,12 +81,10 @@ const Sidebar = () => {
           <ul style={{ marginLeft: "10px", color: "white", listStyleType: "none" }}>
             <li style={{ marginBottom: "10px",color:"#BEFB7A",display: 'flex',
         alignItems: 'center',
-        WebkitBoxShadow: 'linear-gradient(90deg, #e0ff00, #a0ff00)',
-        
-        borderRadius: '8px',
-        border: '',
-     
-        maxWidth: '300px', }}> <img src={dashboard} alt="" style={{ marginRight: "10px" }}/> Dashboard</li>
+        boxShadow:"inset -10px 0  0px 0px #c0ea95",
+         background: 'linear-gradient(135deg, #9b76d6,#a292c1 )',
+        maxWidth: '300px', 
+       }}> <img src={dashboard} alt="" style={{ marginRight: "10px" }}/> Dashboard</li>
             <li style={{ marginBottom: "10px" }}> <img src={copilot} alt="" style={{ marginRight: "10px" }}/> CRM</li>
             <li style={{ marginBottom: "10px" }}><FiBox style={{ marginRight: "10px" }} />MAM</li>
             <li style={{ marginBottom: "10px" }}><FiPieChart style={{ marginRight: "10px" }} />PAMM</li>
