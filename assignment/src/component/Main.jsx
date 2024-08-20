@@ -212,7 +212,7 @@ const Main = () => {
     backgroundColor: "white", 
     ml: { xs: "10px", md: "20px" }, 
     mr: { xs: "10px", md: "20px" },
-    height: { xs: "auto", md: "230px" }, 
+    height: { xs: "auto", md: "230px",lg:"230px" }, 
     borderRadius: "10px",
     padding: { xs: "10px", md: "20px" }, 
     display:"flex",
@@ -248,7 +248,7 @@ const Main = () => {
       display: "flex", 
       flexDirection: "column" 
     }}>
-      <Typography sx={{ fontSize: { xs: "10px", md: "12px" }, fontWeight: "bold" }}>
+      <Typography sx={{ fontSize: { xs: "10px", md: "11px" }, fontWeight: "bold" }}>
         Master Account
       </Typography>   
     </Box>
@@ -263,10 +263,10 @@ const Main = () => {
       flexDirection: "row", 
       justifyContent: "space-evenly" 
     }}>
-      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", height: "100%", width: "40%", borderRadius: "10px", backgroundColor: "#f3f4f8", color: "#545b68" }}>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "11px" }, textAlign: "center", height: "100%", width: "40%", borderRadius: "10px", backgroundColor: "#f3f4f8", color: "#545b68" }}>
         CTrader
       </Box>
-      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", color: "#838992", height: "100%", width: "40%" }}>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "11px" }, textAlign: "center", color: "#838992", height: "100%", width: "40%" }}>
         #273728
       </Box>
     </Box>
@@ -283,10 +283,10 @@ const Main = () => {
       <Box sx={{ border: "", ml: "10px", fontSize: { xs: "20px", md: "25px" }, textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
         0.00
       </Box>
-      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
+      <Box sx={{ border: "", fontSize: "12px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
         <Typography sx={{ mt: { xs: '5px', md: '10px' }, fontWeight: "bold" }}>USD</Typography>
       </Box>
-      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68", ml: { xs: "30px", md: "90px" }, display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <Box sx={{ border: "", fontSize: "12px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68", ml: { xs: "30px", md: "90px" }, display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Typography sx={{ fontWeight: "bold", ml: "30px" }}><MdArrowOutward /></Typography>
       </Box>
     </Box>
@@ -367,7 +367,7 @@ const Main = () => {
           border: "", 
           backgroundColor: "", 
           mt:"-50px",
-          height: "285px", 
+          height: "290px", 
           borderRadius: "10px",
           padding: "20px",
           boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
