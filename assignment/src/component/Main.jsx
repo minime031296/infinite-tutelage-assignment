@@ -18,41 +18,45 @@ const Main = () => {
   return (
     <Box 
       sx={{
-        height: "500px", 
-        width: "81%", 
-        border: "", 
-        ml: "18%", 
+        height: "400px",  
+        width: "70%",     
+        ml: "20%", 
         mt: "6%", 
         display: "grid", 
         gridTemplateColumns: "2fr 1fr",  
         gridTemplateRows: "1fr 2fr",     
         gap: "5px",
-        backgroundColor:"white",
+        backgroundColor: "white"
     }}
     >
       
     <Box 
         sx={{ 
-          border: "", 
-          backgroundColor: "white", 
-          gridColumn: "1 / 2", 
-          gridRow: "1 / 2",
-          borderRadius: "10px",
-          height:"170px",
-          boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
-          padding: "10px",
+            backgroundColor: "white", 
+            gridColumn: "1 / 2", 
+            gridRow: "1 / 2",
+            borderRadius: "10px",
+            height: "150px", 
+            boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
+            padding: "8px",   
         }}
       >
-        <Typography sx={{fontSize:"12px", fontWeight:"bold"}}>
+        <Typography sx={{fontSize:"11px", fontWeight:"bold"}}>
                 Quick Links
         </Typography>
 
         <Box 
-        sx={{border: "", height:"110px", width:"100%", mt:"12px", display:"flex", flexDirection:"column", gap:"10px"}}>
+        sx={{   
+            height: "90px",  
+            width: "100%", 
+            mt: "10px",     
+            display: "flex", 
+            flexDirection: "column", 
+            gap: "8px"}}>
             <Box 
              sx={{border: "", height:"50%", width:"100%",display:"flex", flexDirection:"row", gap:"10px"}}
             >
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -65,7 +69,7 @@ const Main = () => {
                     </Box>
                 </Box>
                 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -78,7 +82,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -91,7 +95,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -104,7 +108,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column",  backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -117,7 +121,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column",backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -130,7 +134,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"15%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -146,7 +150,7 @@ const Main = () => {
             </Box>
             <Box
             sx={{border: "", height:"50%", width:"100%",display:"flex", flexDirection:"row", gap:"10px"}}>
-                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -159,7 +163,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -172,7 +176,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column",  backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
@@ -185,7 +189,7 @@ const Main = () => {
                     </Box>
                 </Box>
 
-                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", backgroundColor:"#fcfcfc"}}>
+                <Box sx={{border: "", height:"100%", width:"13%", borderRadius:"10px", display:"flex", flexDirection:"column", backgroundColor:"#fcfcfc"}}>
                     <Box
                         sx={{border: "", height:"100px", width:"100%",  display: "flex", justifyContent: "center", alignItems: "center",}}
                     >
