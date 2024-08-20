@@ -38,7 +38,7 @@ const Sidebar = () => {
             Dashboard
           </Typography>
 
-          <Box sx={{ display: "flex", flexDirection: "row", ml: "auto", alignItems: "center" }}>
+          <Box sx={{ display: "flex", flexDirection: "row", ml: "37.5rem", alignItems: "center" }}>
             <Box sx={{ position: "relative", display: "flex", alignItems: "center" }}>
               <RiSearch2Line style={{ position: "absolute", left: "10px", color: "black" }} />
               <input
@@ -49,10 +49,11 @@ const Sidebar = () => {
                   border: "1px solid black",
                   borderRadius: "4px",
                   height: "30px",
+                  width:"250px"
                 }}
               />
             </Box>
-            <Typography sx={{ color: "black", marginLeft: "30px", marginTop: "2px" }}>
+            <Typography sx={{ color: "black", marginLeft: "40px", marginTop: "2px" }}>
               <PiBellSimpleLight style={{ width: "40px" }} />
             </Typography>
           </Box>
