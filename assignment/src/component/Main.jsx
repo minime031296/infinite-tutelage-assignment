@@ -27,23 +27,20 @@ const Main = () => {
         gridTemplateColumns: "2fr 1fr",  
         gridTemplateRows: "1fr 2fr",     
         gap: "5px",
-        backgroundColor:"white"
+        backgroundColor:"white",
     }}
     >
       
-      
-      <Box 
+    <Box 
         sx={{ 
           border: "", 
           backgroundColor: "white", 
           gridColumn: "1 / 2", 
           gridRow: "1 / 2",
           borderRadius: "10px",
-          height:"190px",
+          height:"170px",
           boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
-          padding: "20px",
-          
-
+          padding: "10px",
         }}
       >
         <Typography sx={{fontSize:"12px", fontWeight:"bold"}}>
@@ -204,171 +201,168 @@ const Main = () => {
         </Box>
       </Box>
 
-      {/* Upper-right box */}
-      <Box 
-        sx={{ 
-            border: "", 
-            backgroundColor: "white", 
-            ml:"20px",
-            mr:"20px",
-            height: "250px", 
-            borderRadius: "10px",
-            padding: "20px",
-            display:"flex",
-            flexDirection:"column",
-            gap:"5px",
-            boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-        }}
-      >
-        <Typography  sx={{fontSize:"12px", fontWeight:"bold",mt:"-10px"}}>
-            Trading Accounts
-        </Typography>
+{/* Upper-right box */}
+<Box 
+  sx={{ 
+    border: "", 
+    backgroundColor: "white", 
+    ml: { xs: "10px", md: "20px" }, 
+    mr: { xs: "10px", md: "20px" },
+    height: { xs: "auto", md: "230px" }, 
+    borderRadius: "10px",
+    padding: { xs: "10px", md: "20px" }, 
+    display:"flex",
+    flexDirection:"column",
+    gap:"5px", 
+    boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+  }}
+>
+  <Typography sx={{ fontSize: { xs: "10px", md: "12px" }, fontWeight: "bold", mt: { xs: "0px", md: "-10px" } }}>
+    Trading Accounts
+  </Typography>
 
-        <Box 
-            sx={{ 
-                border: "", 
-                backgroundColor: "#fcfcfc", 
-                ml:"20px",
-                mr:"20px",
-                height: "100px", 
-                borderRadius: "10px",
-                padding: "10px",
-                display:"flex",
-                flexDirection:"column",
-                boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-            }}
-        >
+ {/* First box */}
+  <Box 
+    sx={{ 
+      border: "", 
+      backgroundColor: "#fcfcfc", 
+      ml: { xs: "10px", md: "20px" }, 
+      mr: { xs: "10px", md: "20px" }, 
+      height: "90px", 
+      borderRadius: "10px",
+      padding: "10px",
+      display: "flex",
+      flexDirection: "column",
+      boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
+    }}
+  >
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mr: { xs: "30px", md: "70px" }, 
+      height: "20px", 
+      display: "flex", 
+      flexDirection: "column" 
+    }}>
+      <Typography sx={{ fontSize: { xs: "10px", md: "12px" }, fontWeight: "bold" }}>
+        Master Account
+      </Typography>   
+    </Box>
 
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mr:"70px",
-                    height: "20px", 
-                    display:"flex",
-                    flexDirection:"column"
-                }}
-            >
-            <Typography  sx={{fontSize:"12px", fontWeight:"bold"}}>
-                Master Account
-            </Typography>   
-            </Box>
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mt:"5px",
-                    mr:"70px",
-                    height: "20px", 
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:"space-evenly"
-                }}
-            >
-                <Box sx={{border:"", fontSize:"12px",textAlign:"center",height:"100%",width:"40%",borderRadius:"10px", backgroundColor:"#f3f4f8", color:"#545b68" }}>CTrader</Box>
-                <Box sx={{border:"", fontSize:"12px",textAlign:"center",color:"#838992",height:"100%",width:"40%", }}>#273728</Box>
-            </Box>
-                
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mt:"5px",
-                    width:"50%",
-                    height: "35px", 
-                    display:"flex",
-                    flexDirection:"row",
-                    
-                }}
-            >
-                <Box sx={{border:"", ml:"10px",fontSize:"25px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68" }}>0.00</Box>
-                <Box sx={{border:"", fontSize:"16px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68" }}>
-                  <Typography sx={{mt:'10px', fontWeight:"bold"}}>USD</Typography>
-                </Box>
-                <Box sx={{border:"", fontSize:"16px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68", ml:"90px", display:"flex", justifyContent:"center", alignItems:"center" }}>
-                  <Typography sx={{ fontWeight:"bold", ml:"30px"}}><MdArrowOutward /></Typography>
-                </Box>
-            </Box>
-           
-        </Box>
-        
-        <Box 
-            sx={{ 
-                border: "", 
-                backgroundColor: "#fcfcfc", 
-                ml:"20px",
-                mr:"20px",
-                height: "100px", 
-                borderRadius: "10px",
-                padding: "10px",
-                display:"flex",
-                flexDirection:"column",
-                boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-            }}
-        >
-
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mr:"70px",
-                    height: "20px", 
-                    display:"flex",
-                    flexDirection:"column",
-                }}
-            >
-            <Typography  sx={{fontSize:"12px", fontWeight:"bold"}}>
-                Master Account
-            </Typography>   
-            </Box>
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mt:"5px",
-                    mr:"70px",
-                    height: "20px", 
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:"space-evenly",
-                 
-                }}
-            >
-                <Box sx={{border:"", fontSize:"12px",textAlign:"center",height:"100%",width:"40%",borderRadius:"10px", backgroundColor:"#f3f4f8", color:"#545b68" }}>CTrader</Box>
-                <Box sx={{border:"", fontSize:"12px",textAlign:"center",color:"#838992",height:"100%",width:"40%", }}>#273728</Box>
-            </Box>
-                
-            <Box
-                sx={{ 
-                    border: "", 
-                    backgroundColor: "", 
-                    mt:"5px",
-                    width:"50%",
-                    height: "30px", 
-                    display:"flex",
-                    flexDirection:"row",
-                   
-                }}
-            >
-                <Box sx={{border:"", ml:"10px",fontSize:"25px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68" }}>0.00</Box>
-                <Box sx={{border:"", fontSize:"16px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68" }}>
-                  <Typography sx={{mt:'10px', fontWeight:"bold"}}>USD</Typography>
-                </Box>
-                <Box sx={{border:"", fontSize:"16px",textAlign:"center",height:"100%", backgroundColor:"", color:"#545b68", ml:"90px", display:"flex", justifyContent:"center", alignItems:"center" }}>
-                  <Typography sx={{ fontWeight:"bold", ml:"35px"}}><MdArrowOutward /></Typography>
-                </Box>
-            </Box>
-            
-       </Box>
-        
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mt: "5px", 
+      mr: { xs: "30px", md: "70px" }, 
+      height: "20px", 
+      display: "flex", 
+      flexDirection: "row", 
+      justifyContent: "space-evenly" 
+    }}>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", height: "100%", width: "40%", borderRadius: "10px", backgroundColor: "#f3f4f8", color: "#545b68" }}>
+        CTrader
       </Box>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", color: "#838992", height: "100%", width: "40%" }}>
+        #273728
+      </Box>
+    </Box>
+    
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mt: "5px", 
+      width: { xs: "100%", md: "50%" }, 
+      height: "35px", 
+      display: "flex", 
+      flexDirection: "row", 
+    }}>
+      <Box sx={{ border: "", ml: "10px", fontSize: { xs: "20px", md: "25px" }, textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
+        0.00
+      </Box>
+      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
+        <Typography sx={{ mt: { xs: '5px', md: '10px' }, fontWeight: "bold" }}>USD</Typography>
+      </Box>
+      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68", ml: { xs: "30px", md: "90px" }, display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Typography sx={{ fontWeight: "bold", ml: "30px" }}><MdArrowOutward /></Typography>
+      </Box>
+    </Box>
+  </Box>
+  
+  {/* second box */}
+  <Box 
+    sx={{ 
+      border: "", 
+      backgroundColor: "#fcfcfc", 
+      ml: { xs: "10px", md: "20px" }, 
+      mr: { xs: "10px", md: "20px" }, 
+      height: "90px", 
+      borderRadius: "10px",
+      padding: "10px",
+      display: "flex",
+      flexDirection: "column",
+      boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
+    }}
+  >
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mr: { xs: "30px", md: "70px" }, 
+      height: "20px", 
+      display: "flex", 
+      flexDirection: "column" 
+    }}>
+      <Typography sx={{ fontSize: { xs: "10px", md: "12px" }, fontWeight: "bold" }}>
+        Master Account
+      </Typography>   
+    </Box>
+
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mt: "5px", 
+      mr: { xs: "30px", md: "70px" }, 
+      height: "20px", 
+      display: "flex", 
+      flexDirection: "row", 
+      justifyContent: "space-evenly" 
+    }}>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", height: "100%", width: "40%", borderRadius: "10px", backgroundColor: "#f3f4f8", color: "#545b68" }}>
+        CTrader
+      </Box>
+      <Box sx={{ border: "", fontSize: { xs: "10px", md: "12px" }, textAlign: "center", color: "#838992", height: "100%", width: "40%" }}>
+        #273728
+      </Box>
+    </Box>
+    
+    <Box sx={{ 
+      border: "", 
+      backgroundColor: "", 
+      mt: "5px", 
+      width: { xs: "100%", md: "50%" }, 
+      height: "35px", 
+      display: "flex", 
+      flexDirection: "row", 
+    }}>
+      <Box sx={{ border: "", ml: "10px", fontSize: { xs: "20px", md: "25px" }, textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
+        0.00
+      </Box>
+      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68" }}>
+        <Typography sx={{ mt: { xs: '5px', md: '10px' }, fontWeight: "bold" }}>USD</Typography>
+      </Box>
+      <Box sx={{ border: "", fontSize: "16px", textAlign: "center", height: "100%", backgroundColor: "", color: "#545b68", ml: { xs: "30px", md: "90px" }, display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Typography sx={{ fontWeight: "bold", ml: "30px" }}><MdArrowOutward /></Typography>
+      </Box>
+    </Box>
+  </Box>
+
+</Box>
 
       {/* Lower-left box*/}
       <Box 
         sx={{ 
           border: "", 
           backgroundColor: "", 
-          mt:"-45px",
+          mt:"-50px",
           height: "285px", 
           borderRadius: "10px",
           padding: "20px",
@@ -501,12 +495,12 @@ const Main = () => {
                     </Typography>
                 </Box>
                 </Box>   
-</Box>
+    </Box>
 
         
 
 
-<Box
+    <Box
         sx = {{
                 border: "", 
                 backgroundColor: "#fcfcfc", 
@@ -621,8 +615,9 @@ const Main = () => {
                 borderRadius: "10px",
                 display: "flex",
                 flexDirection: "column",
-                boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
-        }}
+                boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                sm: '1 1 70%',
+            }}
         >
             <Box
                 sx={{ 

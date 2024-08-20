@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import { HiDownload  } from "react-icons/hi";
+import { HiDownload } from "react-icons/hi";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -35,14 +35,22 @@ const Graph = () => {
         grid: {
           display: false, 
         },
+        ticks: {
+          display: false, 
+        },
       },
       y: {
         beginAtZero: true, 
         grid: {
-          color: '', 
+          color: '',
+          display: false, 
         },
         ticks: {
-          stepSize: 250, 
+          stepSize: 500, 
+          callback: function(value) {
+            if(value === 0) return '0'
+            return `$${value}`; 
+          }
         },
       },
     },
@@ -52,8 +60,10 @@ const Graph = () => {
     <div style={{ height: "100%", width: "100%", padding: '0px', backgroundColor: "" }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h5 style={{ margin: '0' }}>Overview</h5>
-        <a href="#" style={{ textDecoration: 'none', color: '#A586DC', fontWeight: 'bold', fontSize:"12px" }}><HiDownload  />
-        Download Report</a>
+        <a href="#" style={{ textDecoration: 'none', color: '#A586DC', fontWeight: 'bold', fontSize:"12px" }}>
+          <HiDownload />
+          Download Report
+        </a>
       </div>
       <div style={{ display: 'flex', gap: '10px', marginBottom: '10px', marginTop: '10px' }}>
         <button style={{ backgroundColor: 'transparent', border: 'none', fontSize: '12px', color: '#bab8c3', letterSpacing:"1px" }}>Monthly</button>

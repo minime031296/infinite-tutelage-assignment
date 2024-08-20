@@ -9,10 +9,8 @@ import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import { RiLogoutBoxLine, RiSettings4Line, RiWalletLine } from "react-icons/ri";
 import { PiHeadphones, PiBellSimpleLight } from "react-icons/pi";
-import { LiaBellSolid } from "react-icons/lia";
 import { VscHistory } from "react-icons/vsc";
 import { FiBox, FiPieChart } from "react-icons/fi";
-
 import { RiSearch2Line } from "react-icons/ri";
 import image from '../assets/react.svg';
 import dashboard from '../assets/dashboard.svg'
@@ -23,7 +21,7 @@ import notification from '../assets/notification.svg'
 import './style.css';
 import User from './User';
 
-const drawerWidth = 240;
+const drawerWidth = 230;
 
 const Sidebar = () => {
   return (
