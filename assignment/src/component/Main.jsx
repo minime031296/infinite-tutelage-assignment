@@ -221,7 +221,7 @@ const Main = () => {
     Trading Accounts
   </Typography>
 
- {/* First box */}
+ {/* second box */}
   <Box 
     sx={{ 
       border: "", 
